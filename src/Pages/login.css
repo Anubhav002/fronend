@@ -1,0 +1,67 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    
+    margin-top: 50px;
+    box-shadow: -5px 5px 10px 10px rgb(210, 209, 209);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.heading{
+    max-width: 50%;
+    text-align: center;
+}
+.btn button{
+    color: rgb(196, 38, 91);
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 38, 91); 
+    cursor: pointer;  
+} 
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.input{
+    width: 25vw;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+.checkbox{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.checkbox div{
+    cursor: pointer;
+    margin-top: 20px;
+}
+.checkbox input{
+    cursor: pointer;
+}
+.btn2 button{
+    color: rgb(250, 250, 250);
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background:  rgb(194, 82, 225); 
+    width: 100px; 
+    cursor: pointer;
+} 

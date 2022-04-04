@@ -1,0 +1,95 @@
+.Contacts-div{
+    width: 20vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* position: fixed; */
+}
+.Title h3{
+    margin: 0;
+    position: absolute;
+}
+.input-contact{
+    position: absolute;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.input-contact-visible{
+    position: absolute;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(95, 95, 95);
+    outline: none;
+}
+.lens{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(212, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;;
+}
+.Contact{
+    display: flex;
+    justify-content:flex-start;
+    cursor: pointer;   
+}
+.Contact-button{
+    display: flex;
+    justify-content:space-between;   
+}
+.Contacts{
+    margin-top: 25px;
+    overflow-y: scroll;
+}
+.Contacts::-webkit-scrollbar{
+    width: 8px;
+}
+.Contacts::-webkit-scrollbar-track{
+    width: 8px;
+}
+.Contacts::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 5px;
+}
+.imgdiv1{
+    width: 40px;
+    height: 40px;
+    background: rgb(201, 201, 201);
+    margin:8px 8px 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button{
+    color: blue;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+.profile1{
+  border-radius: 50%;
+}
