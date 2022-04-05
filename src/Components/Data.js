@@ -1,7 +1,7 @@
 const Suggestions=[
     {
         name:"Alok Kumar",
-        image:"/images/person.jpg"
+        image:"../images/person.jpg"
     },
     {
         name:"Arjun Bhardwaj",
