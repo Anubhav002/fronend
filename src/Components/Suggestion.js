@@ -12,7 +12,7 @@ const Suggestion = ({data}) => {
                 <img className='profile1' src={data.image} alt="" width={40} height={40} />
             </div>
             <div>
-                <p> {data.name}</p>
+                <p> {data.content}</p>
             </div>
        </div>
         <div className='button'>

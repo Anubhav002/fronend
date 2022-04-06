@@ -1,32 +1,53 @@
 
+.first{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.background{
+    margin-bottom: 45px;
+    width: 20vw;
+    height: 90px;
+    border-radius: 10px;
+}
 .firstf
 {
-    border-radius: 70%;
-    
+    top :45px;
+    position: absolute;
+    border-radius: 50%;
     width: 80px;
     height: 80px;
     object-fit: cover;
-    margin-left: 80px;
-   
+    border:2px solid white;
     
+      
 }
 .second
 {
-    padding-left: 4px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.second h3{
+    margin: 3px;
+}
+.second p{
+    margin: 5px;
 }
 .third
 {
     display:flex;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    
+    padding-bottom: 15px;   
+}
+.third h4{
+    margin: 5px;
+}
+.third p{
+    margin: 5px;
 }
 .forth
 {    
-    display:table-cell;
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     border-right: 1px solid;
@@ -35,6 +56,7 @@
 }
 .fifth
 {
+    text-align: center;
     display:table-cell;
     padding-left:  45px;
     font-size: 15px;

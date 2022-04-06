@@ -64,4 +64,5 @@ const Suggestions=[
     }
 ]
 
-export default listing; 
+export default listing
+export {Suggestions}

@@ -7,6 +7,7 @@ import Box from'../Components/box/Box'
 import Sidebar from '../Components/sidebar/Sidebar'
 import Ridebar from '../Components/ridebar/Ridebar'
 import Fidebar from '../Components/fidebar/Fidebar'
+import "../styles.css"
 
 const Feeds = () => {
   return (
@@ -14,10 +15,16 @@ const Feeds = () => {
         <Header/>
         <div className='something_else'>
           <div>
-            <Box/>
+            <div className='styling'>
+            <div className="single">
+            <Box />
+            </div>
+            <div className='stylee'>
             <Sidebar/>
             <Ridebar/>
             <Fidebar/>
+            </div>
+            </div>
           </div>
         <Feed />
         <div className='something'>

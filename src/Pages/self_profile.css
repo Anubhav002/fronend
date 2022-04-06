@@ -7,4 +7,5 @@
 }
 .something_else{
     display:flex;
+   justify-content:space-evenly;
 }

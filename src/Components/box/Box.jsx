@@ -1,17 +1,19 @@
 import "./box.css";
 import img1 from "../../images/shreya.jpg";
+import img2 from "../../images/background.jpg"
 
 export default function Box()
 {
     return(
         <div className="main">
-            <div className="first">  
+
+            <div className="first"> 
+              <img className="background" src={img2} alt="" /> 
               <img className="firstf"src={img1} alt=" "/>
              </div>
             <div className="second">
                    <h3>Shreya Tomar</h3>
-                <h6>Newly Recruit at TTN</h6>
-
+                <p>Newly Recruit at TTN</p>
             </div>
             <div className="third">
                 <div className="forth">
