@@ -1,19 +1,20 @@
+import img4 from "../images/person.jpg"
 const Suggestions=[
     {
         name:"Alok Kumar",
-        image:"../images/person.jpg"
+        image:img4
     },
     {
         name:"Arjun Bhardwaj",
-        image:"../images/person.jpg"
+        image:img4
     },
     {
         name:"Vivek Sharma",
-        image:"../images/person.jpg"
+        image:img4
     },
     {
         name:"Riya Sharma",
-        image:"../images/person.jpg"
+        image:img4
     }
 ]
 

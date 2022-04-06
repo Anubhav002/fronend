@@ -1,0 +1,10 @@
+ body{
+     background-color: rgba(232, 232, 250, 0.552);
+ }
+.Self_profile{
+    display: flex;
+    justify-content: space-evenly;
+}
+.something_else{
+    display:flex;
+}

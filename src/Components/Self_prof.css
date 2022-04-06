@@ -1,0 +1,58 @@
+.self_profile{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form{
+    display: flex;
+    width: 60vw;
+}
+.State{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 9vw;
+}
+#state_input{
+    width: 9vw;
+}
+#birthday{
+    margin-bottom: 12px;
+}
+#state_select select{
+    width: 9vw;
+    margin: 10px 5px 0px 5px;
+}
+
+.Address{
+    display: flex;
+    width: 20vw;
+}
+.form input{
+    margin: 5px;
+    width: 20vw;
+    height: 25px;
+}
+.form label{
+    margin: 5px;
+}
+.form select{
+    margin: 5px;
+    width: 20.7vw;
+    height: 31px;
+}
+
+button{
+    margin: 10px;
+    border: 1px solid blue;
+    height: 30px;
+    border-radius: 5px;
+    color: blue;
+   
+}
