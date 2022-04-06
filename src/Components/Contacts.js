@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../Components/Contacts.css"
 import lens from "../images/lens.png"
 import img4 from "../images/person.jpg"
-import data from "../Components/Data"
+import data from "./Data"
 
 const Contacts = () => {
     const [Input, setInput] = useState("input-contact")

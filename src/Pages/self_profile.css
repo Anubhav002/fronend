@@ -1,0 +1,7 @@
+ body{
+     background-color: rgb(168, 168, 168);
+ }
+.Self_profile{
+    display: flex;
+    justify-content: space-evenly;
+}

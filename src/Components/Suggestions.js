@@ -1,8 +1,7 @@
 import React,{useState}from 'react'
 import "../Components/Suggestions.css"
 import lens from "../images/lens.png"
-import img4 from "../images/person.jpg"
-import Data from "../Components/Data"
+import Data from "./Data"
 import Suggestion from './Suggestion'
 
 const Suggestions = () => {

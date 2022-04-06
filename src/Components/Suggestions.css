@@ -9,6 +9,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 .Title{
     display: flex;
