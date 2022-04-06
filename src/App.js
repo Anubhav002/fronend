@@ -2,6 +2,7 @@ import Login from "./Pages/Login";
 import Header from "./Components/Header";
 import Contacts from "./Components/Contacts";
 import Suggestions from "./Components/Suggestions";
+import Feed from "./Components/Feed";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Login/>
         <Contacts/>
         <Suggestions/>
+        <Feed />
       </div>
   );
 }
