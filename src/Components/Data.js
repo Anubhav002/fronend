@@ -1,20 +1,49 @@
-const Suggestions=[
+
+
+
+
+
+const listing=[
+  
     {
-        name:"Alok Kumar",
-        image:"../images/person.jpg"
+        content:"javascript",
+        
     },
     {
-        name:"Arjun Bhardwaj",
-        image:"../images/person.jpg"
+        content:"Mobile Trends",
+        
     },
     {
-        name:"Vivek Sharma",
-        image:"../images/person.jpg"
+        content:"Freelancer",
+        
     },
     {
-        name:"Riya Sharma",
-        image:"../images/person.jpg"
-    }
+        content:"javascript",
+        
+    },
+    {
+        content:"javascript",
+        
+    },
+    {
+        content:"javascript",
+        
+    },
+    {
+        content:"javascript",
+        
+    },
+    {
+        content:"javascript",
+        
+    },
+    {
+        content:"javascript",
+        
+    },
+
+  
+    
 ]
 
-export default Suggestions;
+export default listing; 

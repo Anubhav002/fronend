@@ -1,0 +1,41 @@
+
+.firstf
+{
+    border-radius: 70%;
+    
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 80px;
+   
+    
+}
+.second
+{
+    padding-left: 4px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.third
+{
+    display:flex;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+.forth
+{    
+    display:table-cell;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid;
+    align-items: center;
+    font-size: 15px;
+}
+.fifth
+{
+    display:table-cell;
+    padding-left:  45px;
+    font-size: 15px;
+}

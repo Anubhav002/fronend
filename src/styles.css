@@ -1,0 +1,29 @@
+.styling
+{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.single
+{   
+    box-sizing: border-box;
+    width: 20%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin:10px;
+    padding:10px;
+    flex:40%;
+}
+
+.stylee
+{   
+    box-sizing: border-box;
+    width: 20%;
+    border: 1px solid;
+    border-radius: 10px;
+    margin:10px;
+    padding:15px;
+    flex:80%;
+}

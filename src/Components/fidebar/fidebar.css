@@ -1,0 +1,26 @@
+.sidebar{
+    display: flex;
+    flex: 60%;
+ 
+    border-bottom: 1px solid;
+ 
+    
+ }
+ 
+ .sidebarwrapper{
+    padding:10%;
+ }
+ 
+ .content{
+    margin: 10px;
+ }
+ .show
+{
+   padding:5px;
+   border: 0px;
+   background-color: white;
+   color: mediumturquoise;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: medium;
+   
+}
