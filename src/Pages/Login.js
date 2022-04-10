@@ -1,10 +1,24 @@
-import React, { useState } from 'react'
+import React, { useRef, useContext } from 'react'
 import "../Pages/login.css"
 import img1 from "../images/Header_logo.jpg"
+import { loginCall } from '../apiCall';
+import { AuthContext } from "../context/AuthContext";
+
 
 function Login() {
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("")
+    
+    const email= useRef();
+    const password= useRef();
+    const { isFetching, dispatch } = useContext(AuthContext);
+
+    const loginHandlar=(e)=>{
+        e.preventDefault()
+        console.log(email.current.value)
+        loginCall(
+            { email: email.current.value, password: password.current.value },
+            dispatch
+          );
+     }
   return (
     <div>
         <div className='login'>
@@ -24,27 +38,27 @@ function Login() {
                         </button>
                     </div>
                 </div>
-                <div className="right">
+                <form className="right" onSubmit={loginHandlar}>
+                
                     <div>
                         <h3>Login To Your Account</h3>
                     </div>
                     <br />
                     <div>
-                        <input 
-                        value={username} 
+                        <input  
                         className='input' 
                         type="text"
                         placeholder='TTN Username'
-                        onChange={((e)=>{setUsername(e.target.value)})} />
+                        ref={email}
+                         />
                     </div>
                     <br />
                     <div>
                         <input 
-                        value={password} 
                         className='input' 
                         type="password" 
                         placeholder='Password' 
-                        onChange={((e)=>{setPassword(e.target.value)})}/>
+                        ref={password}/>
                     </div>
                     <div className='checkbox'>
                         <div><input type="checkbox"/>Remember Me</div>
@@ -52,9 +66,9 @@ function Login() {
                     </div>
                     <br />
                     <div className='btn2'>
-                        <button>Sign In</button>
+                        <button type='submit' disabled={isFetching}>Sign In</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
