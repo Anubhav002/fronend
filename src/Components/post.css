@@ -81,6 +81,7 @@
 .like, .dislike{
     width:2em;
     height: 2em;
+    padding-left: 1em;
     margin-right: 5px;
     cursor: pointer;
 }
@@ -100,6 +101,7 @@
     border:none;
     background-color: white;
     font-size: 15px;
+    color: black;
     cursor: pointer; 
 }
 .postBottomBottom{

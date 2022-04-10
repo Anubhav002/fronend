@@ -2,6 +2,7 @@
 .first{
     display: flex;
     justify-content: center;
+    background-color: white;
     position: relative;
 }
 .background{
