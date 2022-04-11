@@ -13,7 +13,7 @@ function Login() {
 
     const loginHandlar=(e)=>{
         e.preventDefault()
-        console.log(email.current.value)
+        
         loginCall(
             { email: email.current.value, password: password.current.value },
             dispatch

@@ -25,9 +25,5 @@ function AppWithCallbackAfterRender() {
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 root.render(<AppWithCallbackAfterRender />);
-<<<<<<< HEAD
 
 
-=======
-reportWebVitals();
->>>>>>> 87a5a232c11bbd72e465e421d211ae1773024170

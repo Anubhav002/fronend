@@ -14,8 +14,9 @@ const Feeds = () => {
     <div>
         <Header/>
         <div className='something_else'>
-          <div>
+          
             <div className='styling'>
+              <div>
             <div className="single">
             <Box />
             </div>
@@ -25,7 +26,8 @@ const Feeds = () => {
             <Fidebar/>
             </div>
             </div>
-          </div>
+            </div>
+          
         <Feed />
         <div className='something'>
         <Contacts/>

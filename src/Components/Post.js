@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./post.css"
-import img2 from '../images/dislike.png'
-import img3 from '../images/like.png'
+import img2 from '../images/Dislike.png'
+import img3 from '../images/Like.png'
 import img4 from '../images/person.jpg'
 import img6 from '../images/option.png'
 import {useState} from 'react'
 import {Users} from "./Data.js"
+import { AuthContext } from '../context/AuthContext'
+
 
 function Post({post}) {
+  const {user} = useContext(AuthContext)
   const [like, setLike] = useState(post.like);
   const [liked, setLiked] = useState(false);
   const likeHandler = ()=>{
