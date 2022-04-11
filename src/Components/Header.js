@@ -32,7 +32,7 @@ const  Header=() =>{
                 <div className='imgdiv'>
                     <img className='profile' src={img4} alt="" width={50} height={50} />
                 </div>
-                <p>{user.username}</p>   
+                <p>{user.name}</p>   
                 <div className='imgdiv'>
                     <img src={img2} alt=""width={20} height={20}/>
                 </div>
