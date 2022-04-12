@@ -1,22 +1,37 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./post.css"
-// import {MoreHoriz} from '@material-ui/core'
-import img1 from '../images/1.jpg'
 import img2 from '../images/Dislike.png'
 import img3 from '../images/Like.png'
 import img4 from '../images/person.jpg'
 import img6 from '../images/option.png'
+import {useState} from 'react'
+import {Users} from "./Data.js"
+import { AuthContext } from '../context/AuthContext'
 
-function Post() {
+
+function Post({post}) {
+  const {user} = useContext(AuthContext)
+  const [like, setLike] = useState(post.like);
+  const [liked, setLiked] = useState(false);
+  const likeHandler = ()=>{
+    setLike(liked ? like-1:like+1);
+    setLiked(!liked);
+  }
+  const [dislike, setDislike] = useState(post.dislike);
+  const [disliked, setDisliked] = useState(false);
+  const dislikeHandler = ()=>{
+    setDislike(disliked ? dislike-1:dislike+1);
+    setDisliked(!disliked);
+  }
   return (
     <div className='post'>
         <div className='postWrap'>
             <div className='postTop'>
               <div className="postTopLeft">
-              <img className='postProfileImage' src={img4} alt=''/>
+              <img className='postProfileImage' src={Users.filter(u=>u.id === post.userId)[0].profilePicture} alt=''/>
               <div>
-              <p className='postUser'>Aryan Goyal</p>
-              <p className='postDate'>Date</p>
+              <p className='postUser'>{Users.filter(u=>u.id === post.userId)[0].username}</p>
+              <p className='postDate'>{post.date}</p>
               </div>
               </div>
               <div className="postTopRight">
@@ -24,20 +39,20 @@ function Post() {
               </div>
             </div>
 
-            <span className='postText'>Hello this is my post</span>
+            <span className='postText'>{post?.desc}</span>
             <div className='postMid'>
               
-              <img className='postImage' src={img1} alt=''/>
+              <img className='postImage' src={post.photo} alt=''/>
             </div>
             <div className='postMidBottom'>
             <div className='postMidBottomLeft'>
-                <img className='like' src={img3} alt='' />
-                <span className='postLike'>18</span>
-                <img className='dislike' src={img2} alt='' />
-                <span className='postDislike'>12</span>
+                <img className='like' src={img3} onClick={likeHandler} alt='' />
+                <span className='postLikeCounter'>{like}</span>
+                <img className='dislike' src={img2} onClick={dislikeHandler} alt='' />
+                <span className='postDislike'>{dislike}</span>
               </div>
               <div className='postMidBottomRight'>
-                <span className='postComment'>2 comments</span>
+                <span className='postComment'>{post.comment} comments</span>
               </div>
             </div>
             
