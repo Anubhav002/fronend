@@ -1,0 +1,12 @@
+
+.head{
+    display:flex;
+    
+}
+.prof{
+width:72%;
+margin-left:30px;
+}
+.sugg{
+  width: 40%;
+}

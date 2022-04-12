@@ -1,0 +1,70 @@
+.mainly{
+    margin: 5%;
+    margin-top:5px;
+    margin-left:5px;
+    
+    border-radius: 5px;
+    border:1px solid black;
+    } 
+.prime{
+    display: flex;
+    position: relative;
+}
+.back{
+    margin-bottom: 45px;
+    width: 100vw;
+    height: 90px;
+    border-radius:0%;
+    object-fit:cover;
+}
+.primef
+{
+    position: absolute;
+    bottom:0px;
+    left:20px;
+    border-radius: 5px ;
+    border-width: 0px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+   
+}  
+.secondary
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.secondary h1{
+    margin:0px;
+    padding:0px;
+    padding-left: 20px;
+    
+}
+.secondary h4{
+ 
+    margin:0px;
+    border:0px;
+    padding-left: 20px;
+    padding-bottom:12px;
+}
+.secondary p{
+    font-size: small;
+    margin:0px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.trio{
+    display: flex;
+}
+
+.add
+{
+    background-color: blue;
+    color: aliceblue;
+    margin:15px
+}
+.visit{
+    border:none;
+    margin-top: 15px;
+}

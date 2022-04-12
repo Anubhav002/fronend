@@ -1,13 +1,21 @@
 import React from 'react'
 import "../Components/Self_prof.css"
-
+import  img1 from"../images/pics.jpg"
+import  img2 from"../images/water.jpg"
+import "../Components/profilee/profilee.css"
 const States=["UP", "Uttrakhand","Delhi", "Himachal Pradesh"]
 
 const Self_prof = () => {
   return (
-    <div className='self_profile'>
-        <form >
+    <div className="mainly">
+    <div className= "prime">
+              <img className="back" src={img2} alt="" /> 
+              <img className="primef"src={img1} alt=" "/>
+    </div>
+   
+    <form >
             <div className='form'>
+            
             <div className='Left'>
                 <label>First Name</label>
                 <input type="text" placeholder='First Name'/>
@@ -50,8 +58,11 @@ const Self_prof = () => {
                <button>Reset All</button>
            </div>
         </form>
-    </div>
+
+</div>
+
   )
+    
 }
 
 export default Self_prof
