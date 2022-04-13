@@ -1,0 +1,19 @@
+.feed{
+    overflow-y: scroll;
+    height:100vh;
+}
+
+.feed::-webkit-scrollbar{
+    width: 8px;
+    margin-top:10px;
+}
+.feed::-webkit-scrollbar-track{
+    width: 8px;
+    margin-top:10px;
+}
+.feed::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 5px;
+    margin-top:10px;
+}

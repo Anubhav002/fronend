@@ -3,7 +3,7 @@ import "./sidebar.css";
 import listing from "../Data";
 
 const Sidebar = () => {
-  const [data, setdata] = useState([]);
+  
   const [visible, setVisible] = useState(3);
 
   const showmoreitems = () => {

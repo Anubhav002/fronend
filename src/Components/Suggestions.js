@@ -1,8 +1,9 @@
 import React,{useState}from 'react'
 import "../Components/Suggestions.css"
 import lens from "../images/lens.png"
-import Data from "./Data"
+import Data from "./suggestiond"
 import Suggestion from './Suggestion'
+
 
 const Suggestions = () => {
     const [Input, setInput] = useState("input-contact")

@@ -178,7 +178,32 @@ export const Users = [
       dislike: 3,
       comment: 1,
     }
+     
   ];
+   
+  export const contact =[
+   { name : "Riya",
+     image:img4
+    },
+    { name : "Riya",
+     image:img4
+    },
+    { name : "Riya",
+    image:img4
+   },
+   { name : "Riya",
+   image:img4
+  },
+  { name : "Riya",
+  image:img4
+ },
+ { name : "Riya",
+ image:img4
+},
+{ name : "Riya",
+     image:img4
+    },
 
+  ]
 export default listing
 export {Suggestions}

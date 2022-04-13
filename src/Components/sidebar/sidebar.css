@@ -1,18 +1,19 @@
 .sidebar{
    display: flex;
-   flex: 60%;
+  
 
    border-bottom: 1px solid;
+   border-radius: 10px;
 
    
 }
 
-.sidebarwrapper{
-   padding:10%;
+.sidewrapper{
+   padding:20px;
 }
 
 .content{
-   margin: 10px;
+   margin: 5px;
 }
 .show
 {

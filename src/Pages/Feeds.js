@@ -8,6 +8,7 @@ import Sidebar from '../Components/sidebar/Sidebar'
 import Ridebar from '../Components/ridebar/Ridebar'
 import Fidebar from '../Components/fidebar/Fidebar'
 import "../styles.css"
+import {Link} from "react-router-dom"
 
 const Feeds = () => {
   return (
@@ -18,10 +19,10 @@ const Feeds = () => {
             <div className='styling'>
               <div>
             <div className="single">
-            <Box />
+           <Link className="change" to="/self_profile">  <Box /></Link>
             </div>
             <div className='stylee'>
-            <Sidebar/>
+            
             <Ridebar/>
             <Fidebar/>
             </div>
