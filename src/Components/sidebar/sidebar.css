@@ -1,14 +1,15 @@
 .sidebar{
    display: flex;
    flex: 60%;
-
+   border-radius: 10px;
    border-bottom: 1px solid;
 
    
 }
 
-.sidebarwrapper{
-   padding:10%;
+.sidewrapper{
+   /* padding:10%; */
+   margin-left: 20px;
 }
 
 .content{

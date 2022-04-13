@@ -11,7 +11,7 @@ const Suggestions = () => {
     const [search, setSearch] = useState("")
 
     const {user} = useContext(AuthContext)
-    console.log(user)
+    // console.log(user)
     // useEffect(async() => {
     //   try{
     //         const Data= axios.get(/suggestions)

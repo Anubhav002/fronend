@@ -11,9 +11,9 @@ import { AuthContextProvider } from "./context/AuthContext"
 //   document.getElementById('root')
 // );
 function AppWithCallbackAfterRender() {
-  useEffect(() => {
-    console.log('rendered');
-  });
+  // useEffect(() => {
+  //   console.log('rendered');
+  // });
 
   return( 
    < AuthContextProvider>
