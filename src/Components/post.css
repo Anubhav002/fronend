@@ -9,6 +9,7 @@
     flex-direction: column;
     -webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.6); 
     box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.6);
+    position: relative;
 }
 .postWrap{
     padding:10px;
@@ -56,6 +57,7 @@
     align-items: center;
     cursor: pointer; 
 }
+
 .postMid{
     margin: 10px 0;
 
@@ -73,14 +75,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 .postMidBottomLeft{
     display: flex;
     align-items: center;
 }
 .like, .dislike{
-    width:2em;
-    height: 2em;
+    /* width:2em;
+    height: 2em; */
     padding-left: 1em;
     margin-right: 5px;
     cursor: pointer;
@@ -102,9 +105,10 @@
     background-color: white;
     font-size: 15px;
     color: black;
-    cursor: pointer; 
+    cursor: pointer;
 }
 .postBottomBottom{
+    margin-top: 5px;
     display: flex;
     align-items: center;
     
@@ -118,4 +122,34 @@
 }
 .postCommentText:focus{
     outline: none;
+}
+hr{
+    margin: 0;
+}
+.options{
+    height: 40px;
+    width: 150px;
+    border:1px solid black;
+    position:absolute;
+    right: 40px;
+    top :50px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: beige;
+    display: none;
+}
+.options-Show{
+    height: 40px;
+    width: 150px;
+    border:1px solid black;
+    position:absolute;
+    right: 40px;
+    top :50px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: beige;
 }

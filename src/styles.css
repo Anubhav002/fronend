@@ -35,6 +35,9 @@
     display:flex;
     justify-content:space-evenly;
 }
+h3{
+    font-size: 1.3rem;
+}
 
 .change{
     text-decoration: none;

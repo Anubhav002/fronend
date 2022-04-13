@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './share.css'
-import img4 from '../images/person.jpg'
 import img5 from '../images/gallery.png'
 import img7 from '../images/send.png'
+import { AuthContext } from '../context/AuthContext'
 
 function Share() {
+
+  const {user}= useContext(AuthContext);
+
   return (
     <div className='share'>
         <div className='shareWrap'>
                 <div className='shareStatus'>
-                <img className='shareProfileImage' src={img4} alt=''/>
+                <img className='shareProfileImage' src={user.imageUrl} alt=''/>
                 <input type='text' className='shareInput' placeholder='Share a post...'/>
                 </div>
                 <div className='shareBottom'>
