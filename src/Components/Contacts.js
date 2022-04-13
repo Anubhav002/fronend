@@ -1,12 +1,31 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "../Components/Contacts.css"
 import lens from "../images/lens.png"
 import img4 from "../images/person.jpg"
-import data from "./Data"
+// import data from "./Data"
+import axios from "axios"
+import { AuthContext } from '../context/AuthContext'
 
 const Contacts = () => {
     const [Input, setInput] = useState("input-contact")
     const [search, setSearch] = useState("")
+    const [data, setData] = useState([])
+    
+  
+    const { user } = useContext(AuthContext)
+
+    useEffect(() => {
+       const friends=async()=>{
+           try{
+            const findfriends= await axios.get(`/users/${user._id}/followings`)
+            setData(findfriends.data);
+           }
+           catch(err){
+               console.log(err)
+           }
+       }
+    },[])
+    
   return (
     <div>
         <div className='Contacts-div'>
@@ -34,10 +53,10 @@ const Contacts = () => {
                         return(
                             <div className="Contact" key={key}>
                             <div className='imgdiv1'>
-                                <img className='profile1' src={img4} alt="" width={40} height={40} />
+                                <img className='profile1' src={data.imageUrl} alt="" width={40} height={40} />
                             </div>
                             <div>
-                                <p>{data.name}</p>
+                                <p>{data.username}</p>
                             </div>
                         </div>  
                         )

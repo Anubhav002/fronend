@@ -4,6 +4,7 @@ import img1 from "../images/Header_logo.jpg"
 import { loginCall } from '../apiCall';
 import { AuthContext } from "../context/AuthContext";
 import {GoogleLogin} from "react-google-login";
+import axios from 'axios';
 
 
 function Login() {
@@ -13,10 +14,24 @@ function Login() {
     const { isFetching, dispatch } = useContext(AuthContext);
 
     
-   const googleLogin=(res)=>{
+   const googleLogin= async(res)=>{
        console.log(res.profileObj)
-        localStorage.setItem("user", JSON.stringify(res.profileObj))
-      window.location.href="/feeds"
+       const user={
+           email:res.profileObj.email,
+           familyName:res.profileObj.familyName,
+           givenName:res.profileObj.givenName,
+           imageUrl:res.profileObj.imageUrl,
+           googleId:res.profileObj.googleId
+       }
+       try{
+           const saved= await axios.post("/auth/register",user)
+           const user1= await axios.get(`/users/${res.profileObj.googleId}`)
+            localStorage.setItem("user", JSON.stringify(user1.data))
+            window.location.href="/feeds"
+        }
+        catch(err){
+            console.log(err)
+        }
    }
 
     const loginHandlar=(e)=>{

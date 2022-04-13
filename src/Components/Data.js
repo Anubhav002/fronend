@@ -1,45 +1,45 @@
 import img4 from "../images/person.jpg"
 const listing=[
   
-    {
-        content:"javascript",
-        
-    },
-    {
-        content:"Mobile Trends",
-        
-    },
-    {
-        content:"Freelancer",
-        
-    },
-    {
-        content:"javascript",
-        
-    },
-    {
-        content:"javascript",
-        
-    },
-    {
-        content:"javascript",
-        
-    },
-    {
-        content:"javascript",
-        
-    },
-    {
-        content:"javascript",
-        
-    },
-    {
-        content:"javascript",
-        
-    },
-]
-  
+  {
+    content:"javascript",
     
+  },
+  {
+    content:"Mobile Trends",
+    
+  },
+  {
+    content:"Freelancer",
+    
+  },
+  {
+    content:"javascript",
+    
+  },
+  {
+    content:"javascript",
+    
+  },
+  {
+    content:"javascript",
+    
+  },
+  {
+    content:"javascript",
+    
+  },
+  {
+    content:"javascript",
+    
+  },
+  {
+    content:"javascript",
+    
+  },
+]
+
+
 const Suggestions=[
     {
         name:"Alok Kumar",

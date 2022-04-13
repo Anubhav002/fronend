@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "../Components/Self_prof.css"
+import { AuthContext } from '../context/AuthContext'
+
 
 const States=["UP", "Uttrakhand","Delhi", "Himachal Pradesh"]
 
 const Self_prof = () => {
+    const {user} = useContext(AuthContext)
   return (
     <div className='self_profile'>
         <form >
             <div className='form'>
             <div className='Left'>
                 <label>First Name</label>
-                <input type="text" placeholder='First Name'/>
+                <input type="text" placeholder='First Name' value={user.givenName}/>
                 <label>Designation</label>
                 <select>{
                     States.map((state, index)=>{
@@ -24,7 +27,7 @@ const Self_prof = () => {
             </div>
             <div className='Left'>
                 <label>Last Name</label>
-                <input type="text" placeholder='Last Name'/>
+                <input type="text" placeholder='Last Name' value={user.familyName}/>
                 <label >My Website</label>
                 <input type="text" placeholder='My Website'/>
                 <label>Birthday</label>
