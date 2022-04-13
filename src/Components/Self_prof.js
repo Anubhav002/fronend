@@ -1,16 +1,28 @@
 import React, { useContext } from 'react'
 import "../Components/Self_prof.css"
+<<<<<<< HEAD
 import { AuthContext } from '../context/AuthContext'
 
 
+=======
+import  img1 from"../images/pics.jpg"
+import  img2 from"../images/water.jpg"
+import "../Components/profilee/profilee.css"
+>>>>>>> f9b9304178570d3acddf87551e1f5bc97034a430
 const States=["UP", "Uttrakhand","Delhi", "Himachal Pradesh"]
 
 const Self_prof = () => {
     const {user} = useContext(AuthContext)
   return (
-    <div className='self_profile'>
-        <form >
+    <div className="mainly">
+    <div className= "prime">
+              <img className="back" src={img2} alt="" /> 
+              <img className="primef"src={img1} alt=" "/>
+    </div>
+   
+    <form >
             <div className='form'>
+            
             <div className='Left'>
                 <label>First Name</label>
                 <input type="text" placeholder='First Name' value={user.givenName}/>
@@ -53,8 +65,11 @@ const Self_prof = () => {
                <button>Reset All</button>
            </div>
         </form>
-    </div>
+
+</div>
+
   )
+    
 }
 
 export default Self_prof

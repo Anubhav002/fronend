@@ -4,6 +4,9 @@
     padding: 20px;
     border-radius: 10px;
 }
+
+
+
 .Left{
     display: flex;
     flex-direction: column;
