@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import "./post.css"
 import img2 from '../images/Dislike.png'
 import img3 from '../images/Like.png'
-import img4 from '../images/person.jpg'
 import img6 from '../images/option.png'
 import {useState} from 'react'
 import {Users} from "./Data.js"
@@ -23,6 +22,9 @@ function Post({post}) {
     setDislike(disliked ? dislike-1:dislike+1);
     setDisliked(!disliked);
   }
+
+    const [report, setReport] = useState('options')
+
   return (
     <div className='post'>
         <div className='postWrap'>
@@ -34,8 +36,11 @@ function Post({post}) {
               <p className='postDate'>{post.date}</p>
               </div>
               </div>
-              <div className="postTopRight">
+              <div onClick={(()=>{setReport(report==="options"?"options-Show":"options")})} className="postTopRight">
               <img className='postOptions' src={img6} alt=''/>
+              <button className={report} >
+                <h3>Report</h3>
+              </button>
               </div>
             </div>
 
@@ -46,9 +51,9 @@ function Post({post}) {
             </div>
             <div className='postMidBottom'>
             <div className='postMidBottomLeft'>
-                <img className='like' src={img3} onClick={likeHandler} alt='' />
+                <img className='like' src={img3} onClick={likeHandler} alt='' width={40} height={20}/>
                 <span className='postLikeCounter'>{like}</span>
-                <img className='dislike' src={img2} onClick={dislikeHandler} alt='' />
+                <img className='dislike' src={img2} onClick={dislikeHandler} alt='' width={40} height={20} />
                 <span className='postDislike'>{dislike}</span>
               </div>
               <div className='postMidBottomRight'>
@@ -66,7 +71,7 @@ function Post({post}) {
               </div>
             <hr className='postHr' />
               <div className='postBottomBottom'>
-                <img className='postProfileImage' src={img4} alt=''/>
+                <img className='postProfileImage' src={user.imageUrl} alt=''/>
                 <input type='text' className='postCommentText' placeholder='Write a comment...'/>
               </div>
             </div>

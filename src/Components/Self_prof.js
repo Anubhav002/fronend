@@ -1,14 +1,11 @@
 import React, { useContext } from 'react'
 import "../Components/Self_prof.css"
-<<<<<<< HEAD
 import { AuthContext } from '../context/AuthContext'
 
 
-=======
 import  img1 from"../images/pics.jpg"
 import  img2 from"../images/water.jpg"
 import "../Components/profilee/profilee.css"
->>>>>>> f9b9304178570d3acddf87551e1f5bc97034a430
 const States=["UP", "Uttrakhand","Delhi", "Himachal Pradesh"]
 
 const Self_prof = () => {
